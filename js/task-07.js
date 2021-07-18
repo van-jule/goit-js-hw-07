@@ -1,6 +1,8 @@
 const inputEL = document.querySelector("#font-size-control");
 const textEl = document.querySelector("#text")
 
+textEl.style.fontSize = inputEL.value+"px"
+
 
 console.log('textEl.style.fontSize', textEl.style.fontSize)
 
