@@ -1,25 +1,20 @@
-const inputEl = document.querySelector("#validation-input");
-// console.log("inputEl", inputEl)
+const inputEl = document.querySelector('#validation-input')
 
-
-inputEl.addEventListener('blur', onInputBlur);
+inputEl.addEventListener('blur', onInputBlur)
 
 function onInputBlur(event) {
-    console.log("Введено символов", event.target.value.length)
+  console.log('Введено символов', event.target.value.length)
 
-    if (+inputEl.dataset.length === event.target.value.length) {
-        changeClass('valid', 'invalid');
-        // inputEl.classList.add('valid');
-        //         inputEl.classList.remove('invalid');
-
-    } else
-changeClass ('invalid', 'valid')
-        // inputEl.classList.add('invalid');
-        //     inputEl.classList.remove('valid');
-
-    }
+  if (+inputEl.dataset.length === event.target.value.length) {
+    changeClass('valid', 'invalid')
+    // inputEl.classList.add('valid');
+    //         inputEl.classList.remove('invalid');
+  } else changeClass('invalid', 'valid')
+  // inputEl.classList.add('invalid');
+  //     inputEl.classList.remove('valid');
+}
 
 const changeClass = (add, remove) => {
-              inputEl.classList.remove(remove);
-            inputEl.classList.add(add);
-    }
+  inputEl.classList.remove(remove)
+  inputEl.classList.add(add)
+}

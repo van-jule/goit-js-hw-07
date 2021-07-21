@@ -35,5 +35,3 @@ function createBoxes(amount) {
     console.log(divEl.style.width)
   }
 }
-
-// btnClearEl.addEventListener('click', clearBoxes);
